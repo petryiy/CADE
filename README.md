@@ -95,3 +95,7 @@ Inputs derive from the public mouse Spatial perturb-seq dataset [GSE274447](http
 - Wang et al. (2020). *A simple new approach to variable selection in regression, with application to genetic fine mapping*. [DOI: 10.1111/rssb.12388](https://doi.org/10.1111/rssb.12388).
 
 Software citation metadata are in [CITATION.cff](CITATION.cff). Dependency attribution and the current licensing status are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## License
+
+CADE source code is available under the [MIT License](LICENSE). Copyright (c) 2026 Ruiqi Zhang. Public source data and third-party dependencies retain their original rights and licences.

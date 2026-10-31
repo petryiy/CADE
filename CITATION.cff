@@ -7,3 +7,4 @@ authors:
 type: software
 version: 0.1.0
 repository-code: "https://github.com/petryiy/CADE"
+license: MIT
