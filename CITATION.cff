@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this software when using CADE."
+title: "CADE: joint empirical Bayes estimation of correlated neighborhood perturbation effects"
+authors:
+  - family-names: Zhang
+    given-names: Ruiqi
+type: software
+version: 0.1.0
+repository-code: "https://github.com/petryiy/CADE"

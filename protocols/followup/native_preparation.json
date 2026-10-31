@@ -1,0 +1,43 @@
+{
+  "chip": "B03018A2",
+  "raw_cells": 123921,
+  "qc_cells": 122817,
+  "eligible_receivers": 49243,
+  "receiver_blocks": 247,
+  "single_sources": 3173,
+  "all_source_support": {
+    "c9orf72": 51,
+    "cfap410": 117,
+    "clu": 416,
+    "dpp5": 72,
+    "fasn": 408,
+    "flcn": 176,
+    "gfap": 160,
+    "lrrk2": 41,
+    "msafe": 96,
+    "ndufaf": 115,
+    "oligo2": 354,
+    "rbfox": 98,
+    "rraga": 147,
+    "sh3gl2": 196,
+    "srf": 71,
+    "stk39": 348,
+    "tbk1": 82,
+    "trem2": 225
+  },
+  "component_sizes": [
+    47369,
+    40944,
+    35524,
+    84
+  ],
+  "coordinate_pitch_um": 0.5,
+  "stored_total_matches_streamed_total": true,
+  "raw_sha256": "06635972f0a2054951ad9ef220f921a2c0e0b06f319efc2fdfcc2bc5beef5fcc",
+  "raw_bytes": 1721481532,
+  "output_sha256": "71b95b55971508ee15a0d27f568ab06b9ff67d0f04612812f029f836f5ebc762",
+  "input_path": "GSM9659883_B03018A2.adjusted.cellbin.gef",
+  "timestamp_utc": "2026-10-30T11:27:24.270786+00:00",
+  "model_results_inspected": false,
+  "sample_scope": "Previously unused chip, same study; no inferred animal IDs."
+}

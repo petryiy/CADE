@@ -1,0 +1,176 @@
+{
+  "id": "CADE-external-SuSiE-and-native-lock-20261030-v1",
+  "frozen_at_utc": "2026-10-30T04:02:07.133902+00:00",
+  "status": "Frozen before any new outcome distribution, fitted estimate, or comparative score is inspected.",
+  "purpose": "Test an established correlated regression estimator and native held-out readouts without modifying CADE.",
+  "fixed_code": {
+    "notebook_sha256": "285b8e64744e8d246a99e94abeafaa02cfd9ed56b5c6c447e06a76d8bdcc30a5",
+    "normal_cache_sha256": "ff7250943b4e9ad3e81cafe80a5ed29d63b4da4d963f7e65ae62eaaf09bd9cc5",
+    "spatial_cache_sha256": "e58151471c7cdc210f7f909f0a913364aa6f0727b55272172cdc3252bc74e02f"
+  },
+  "package": {
+    "name": "susieR",
+    "version": "0.14.2",
+    "source": "CRAN official binary/source",
+    "interface": "susie_suff_stat",
+    "L": 8,
+    "standardize": false,
+    "intercept": false,
+    "residual_variance": 1,
+    "estimate_residual_variance": false,
+    "estimate_prior_variance": true,
+    "estimate_prior_method": "optim",
+    "scaled_prior_variance": 0.2,
+    "max_iter": 1000,
+    "tol": 1e-05,
+    "refine": false,
+    "check_null_threshold": 0,
+    "prior_weights": "uniform"
+  },
+  "score_adapter": {
+    "likelihood": "Same rank-reduced CADE u | beta ~ N(A beta,C). Pass XtX=A.T C^-1 A, Xty=A.T C^-1 u, yty=u.T C^-1 u, n=rank(C)+1, X_colmeans=0, y_mean=0. Zero padding/rotation gives an equivalent centered design with rank+1 rows. Fixed residual variance preserves the score likelihood.",
+    "updates": 3,
+    "background": "Identical CADE nuisance profiling and final stable-qm calibration. SuSiE estimates each response separately; CADE pools prior hyperparameters across four responses. This is a stated prior-pooling difference, not an information/input advantage.",
+    "audit": "Retain package convergence, warnings, fit iterations, exact version and hashes. No oracle settings."
+  },
+  "controlled": {
+    "seed": 20261030,
+    "rho": [
+      0,
+      0.3,
+      0.7,
+      0.95
+    ],
+    "patterns": [
+      "null",
+      "single",
+      "paired_same",
+      "paired_opposite"
+    ],
+    "alpha_nonnull": [
+      0.2,
+      0.6,
+      1.0
+    ],
+    "replicates": 100,
+    "total_draws": 4000,
+    "same_existing_scores": true,
+    "primary": "exposure_effect_MSE",
+    "secondary": [
+      "coefficient_MSE",
+      "near_far_contrast_MSE",
+      "inactive_coefficient_MSE"
+    ],
+    "aggregation": "All conditions retained. Pair seed and condition. MCSE by replicate after averaging conditions; not 4000 independent designs."
+  },
+  "spatial": {
+    "protocol": "protocols/benchmark.json",
+    "cases": 1032,
+    "reuse_existing_models": "Hash-verified frozen scores; validate generator replay before joining. Add only SuSiE-score hurdle.",
+    "primary": [
+      "observed_effect_MSE",
+      "observed_mean_MSE"
+    ],
+    "secondary": [
+      "block_mean_MSE",
+      "block_observed_MSE",
+      "null_effect_energy"
+    ],
+    "aggregation": "Existing 32 factorial conditions, 11 stress mechanisms, 12 replicates and both directions. Equal condition weights; paired uncertainty by replicate. No tuning to test outcomes."
+  },
+  "native": {
+    "chips": [
+      "C02943C3",
+      "A03599E2"
+    ],
+    "accession": "GSE274447",
+    "genes": [
+      "Arhgap12",
+      "Ssrp1",
+      "Gad1",
+      "Map2k6"
+    ],
+    "gene_selection": "Published Srf-neighbour DE genes (first three) and a published Lrrk2-neighbour response (Map2k6), chosen before loading their counts. Exact symbols absent from all historical notebook code cells. Not selected by their measured detection rates.",
+    "literature": "https://www.nature.com/articles/s41467-026-69677-6",
+    "expected_directions": [
+      {
+        "target": "srf",
+        "gene": "Arhgap12",
+        "sign": -1
+      },
+      {
+        "target": "srf",
+        "gene": "Ssrp1",
+        "sign": -1
+      },
+      {
+        "target": "srf",
+        "gene": "Gad1",
+        "sign": 1
+      },
+      {
+        "target": "lrrk2",
+        "gene": "Map2k6",
+        "sign": 1,
+        "basis": "Published inverse association with Lrrk2 in orthogonal validation; secondary expectation."
+      }
+    ],
+    "panels": {
+      "geometry_holdout": [
+        "clu",
+        "fasn",
+        "stk39",
+        "oligo2"
+      ],
+      "literature_holdout": [
+        "srf",
+        "lrrk2",
+        "cfap410",
+        "msafe"
+      ]
+    },
+    "heldout_scope": "Readouts never fitted in sections12-21; literature panel source channels also not fitted in that pilot. Same two chips and QC-selected receiver population, not new independent animals. Published findings came partly from this study, not independent biological ground truth.",
+    "receivers": "Use exact frozen pilot receiver cell IDs and five nuisance columns. Full raw counts only supply the four new outcomes. No new cell-type inference or expression-derived covariates.",
+    "sources": "Single-barcode, endogenous library count100..6000, mitochondrial fraction<=0.20, raw geometry component size>=200; verify historical rule. Source IDs/metadata inspected before freezing; no outcome-based replacement.",
+    "primary_geometry": {
+      "first": "20 < d <=50 um",
+      "second": "20 < d <=100 um",
+      "transform": "n/(1+n)",
+      "purpose": "Prespecified overlapping nested exposures; report observed and nuisance-residualized correlations, do not select by correlations."
+    },
+    "sensitivity_geometry": {
+      "first": "20 < d <=50 um",
+      "second": "50 < d <=100 um",
+      "scope": "Full fits and cross-chip prediction only; not an additional selection opportunity."
+    },
+    "models": [
+      "CADE",
+      "diagonal",
+      "logistic_hurdle",
+      "SuSiE_score"
+    ],
+    "optional_screen": false,
+    "support": "Fit and retain every fixed channel/gene. Label literature direction checks adequately supported only if >=10 sources in>=3 blocks and>=20 positive receivers in>=3 blocks on each chip. Otherwise descriptive; do not replace genes or channels.",
+    "primary_metrics": [
+      "Cross-chip combined source-effect cosine on one common covariate reference (equal chip/block weights), with effect energy and nonzero count reported; zero vectors yield undefined cosine, not perfect agreement.",
+      "Cross-chip native block prediction MSE and paired source-on minus source-zero MSE, using training-only fit and fixed nuisance coefficients.",
+      "Delete-one-of-five-block-groups sensitivity of combined effects, normalized by full-fit energy; always accompany with absolute energy and zero-estimator reference."
+    ],
+    "common_reference": "Stack fixed receiver covariates from both chips, outcomes excluded. Evaluate each separately fitted model on this same reference. No reference outcome or result used for fitting.",
+    "null_reference": {
+      "permutations": 99,
+      "seed": "CADE-native-lock-20261030-v1",
+      "scheme": "Shuffle all18 single-barcode target labels within geometry component, component-origin500um source block, and barcode-count stratum1 versus>=2. Source positions, target counts per stratum, receivers and native outcomes fixed. Report movable labels.",
+      "tests": "Per-chip global and16 target-by-gene source-contrast energies. Rank p=(1+number perm>=observed)/100; BH across16 within chip/model/panel. These are exchangeability-conditional reference tests, not known true-null error rates.",
+      "positive_control": "Four prespecified literature directions and evidence across both chips; no synthetic signal.",
+      "negative_control": "mSafe source is a locus control, not proof of no bystander effect. No housekeeping gene is declared a true null."
+    },
+    "resampling": {
+      "groups": 5,
+      "grouping": "Sort block IDs by SHA256(seed|block), assign round robin. Delete each group and refit all models. Prediction reference fixed; report failed fits and unsupported folds."
+    },
+    "count_scale": "Native integer UMI, hurdle q times clipped positive-linear m, same as frozen method. No injections or test-mean calibration."
+  },
+  "failure_policy": "Record all failures/nonconvergence. No silent replacement or seed deletion. Technical corrections are versioned amendments. Never change models, genes, exposure radii, thresholds or metrics after outcomes.",
+  "interpretation": "No requirement that CADE win. Official SuSiE is an input-matched correlation-aware comparator; prior and inference differ. Native stability alone is not accuracy or a causal discovery. Test holdout features, not independent cohort generalization."
+}

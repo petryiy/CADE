@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.DS_Store
+Rlib/
+runtime/
+renv/library/
+results/
+reruns/
+*.log
+*.gef
+*.gef.partial
+.env
+.env.*

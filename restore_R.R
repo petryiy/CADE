@@ -1,0 +1,10 @@
+# Restore the pinned official SuSiE environment without modifying system libraries.
+args <- commandArgs(trailingOnly=TRUE)
+project <- if (length(args)) normalizePath(args[1]) else normalizePath('.')
+library_path <- file.path(project,'Rlib')
+dir.create(library_path,showWarnings=FALSE,recursive=TRUE)
+.libPaths(c(library_path,.libPaths()))
+if (!requireNamespace('renv',quietly=TRUE)) install.packages('renv',lib=library_path,repos='https://cloud.r-project.org')
+renv::restore(project=project,library=library_path,lockfile=file.path(project,'protocols/external/renv.lock'),prompt=FALSE)
+stopifnot(as.character(packageVersion('susieR'))=='0.14.2')
+cat('Official susieR 0.14.2 is ready in',library_path,'\n')

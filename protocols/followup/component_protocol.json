@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-10-30T11:29:24.406923+00:00",
+  "phase": "Secondary prospective protocol after input support audit, before examining prediction errors.",
+  "status": "Main old-to-new test and all its results are retained; no replacement of primary endpoint.",
+  "reason": "The new chip has3173 QC single-guide sources and49243 receivers. Fit on its high-support training regions to separate limited old-chip training support from estimator behavior.",
+  "split": "Leave each of the three geometry components represented among receivers out once; train on the other components. Components are not asserted to be independent animals.",
+  "models": [
+    "CADE_pooled",
+    "CADE_unpooled_same_grid",
+    "CADE_MAP_same_prior",
+    "SuSiE_score",
+    "background_only",
+    "train_mean"
+  ],
+  "parameters": "Same frozen method,three updates,unchanged four source targets and two readout panels. No test-outcome tuning.",
+  "primary": "Equal-block observed count error, separately for all three component holdouts; source-on versus source-zero and independently fitted background-only.",
+  "secondary": "Centered block error reported separately. All fold directions retained.",
+  "replication_limit": "New-data within-chip spatial validation, not independently repeated animals.",
+  "no_predictions_examined_at_freeze": true
+}

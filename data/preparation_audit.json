@@ -1,0 +1,538 @@
+{
+  "C02943C3": {
+    "receivers": 3638,
+    "blocks": 35,
+    "positive_counts": [
+      81,
+      105,
+      130,
+      305
+    ],
+    "feature_columns": [
+      "pooled_annulus::20_50um",
+      "pooled_annulus::50_100um",
+      "density::50um",
+      "density::100um",
+      "source::clu::near",
+      "source::clu::far",
+      "source::fasn::near",
+      "source::fasn::far",
+      "source::stk39::near",
+      "source::stk39::far",
+      "source::oligo2::near",
+      "source::oligo2::far"
+    ],
+    "input_provenance": {
+      "prior_result_dir": "historical_project/results/spatial_pilot",
+      "prior_manifest_sha256": "3c2695fbeee7c26a7afecb25b4d4e34f20935f1a80c26ae92480326e4228b630",
+      "prior_protocol_sha256": "32cb01fa84ae510a1935f5380c83e0e7283b7d66579b99944e59575c755f6e41",
+      "verified_files": [
+        {
+          "path": "A03599E2_features_B3.csv.gz",
+          "bytes": 397374,
+          "sha256": "f0e00c2137a1098b8ee498f2b9be424b2592cf952943fea5968a1366861f5135",
+          "verified": true
+        },
+        {
+          "path": "A03599E2_receiver_outcomes.csv.gz",
+          "bytes": 23696,
+          "sha256": "2e45ea54faaa73c606dea9fe78e180ae532d9225cfe11a663e6c3f42e616d6e3",
+          "verified": true
+        },
+        {
+          "path": "C02943C3_features_B3.csv.gz",
+          "bytes": 252414,
+          "sha256": "0f4015cce1ba5e56e010a4a5ed7806a1c57de99d96b299dd17de6905f692ad78",
+          "verified": true
+        },
+        {
+          "path": "C02943C3_receiver_outcomes.csv.gz",
+          "bytes": 38174,
+          "sha256": "b545fd748f18535ec31a4846d1abf114a550dbaa5c36629d98f1859722b3b64f",
+          "verified": true
+        },
+        {
+          "path": "before_first_fit.json",
+          "bytes": 9502,
+          "sha256": "9df3cd47a50c5374f1451c5d08a9e1277f4856e4f636e5173583c66a25ebac1d",
+          "verified": true
+        },
+        {
+          "path": "decision.json",
+          "bytes": 1898,
+          "sha256": "3f24e0267f8b9b579eb7fbc637fe781324f395295fe62fcd7cdef2f0d1834e9b",
+          "verified": true
+        },
+        {
+          "path": "null_fit_audits.json",
+          "bytes": 714613,
+          "sha256": "96e22ca5a7b047ef5e48ec170dfb09e1360c5e3734b067896c6914e7b13600f0",
+          "verified": true
+        },
+        {
+          "path": "null_metrics.csv",
+          "bytes": 163673,
+          "sha256": "3a1837d0f51fc65908ee0e8c087e622cff03e895899ce2f830f61d803aef6d83",
+          "verified": true
+        },
+        {
+          "path": "null_primary.csv",
+          "bytes": 15690,
+          "sha256": "91b389ae34b11519844b5d24c19584b3239a0b02aa8d873212cbf3400860a42d",
+          "verified": true
+        },
+        {
+          "path": "null_shuffle_audit.csv",
+          "bytes": 22628,
+          "sha256": "5e0d352e727980b0cf2629382a6fea2d307c882f2673814b8c28920de49fb1a5",
+          "verified": true
+        },
+        {
+          "path": "observed_block_metrics.csv",
+          "bytes": 197016,
+          "sha256": "1aa230eb0af5497be43cb1f93d2bf0ad3ab3f863c0e2e0692096786c86552b93",
+          "verified": true
+        },
+        {
+          "path": "observed_feature_diagnostics.csv",
+          "bytes": 14470,
+          "sha256": "2e241c9b6c0fd76830a4a232a3fcf25db545f4ac6c56cc0f88d01a65c7aba0cb",
+          "verified": true
+        },
+        {
+          "path": "observed_fit_audits.json",
+          "bytes": 25751,
+          "sha256": "24740da13da7e7e3e2908c2cc91aa8a3c213ae2e0c16de653f14d93562236df4",
+          "verified": true
+        },
+        {
+          "path": "observed_metrics.csv",
+          "bytes": 6436,
+          "sha256": "c6123304c92694bb09f464ea2966f0494c19a72754f964b4fe8c61d5d12a4f17",
+          "verified": true
+        },
+        {
+          "path": "observed_target_scaling.csv",
+          "bytes": 2189,
+          "sha256": "5a83ccbd26140efd35edc6a10ba997e25846ca1b5c91aed56bfd348e1907eb69",
+          "verified": true
+        },
+        {
+          "path": "pred_A03599E2_to_C02943C3_B0.csv.gz",
+          "bytes": 30795,
+          "sha256": "aded9a449bb34dc254f14985798825615eb3a5fb69d362b7c5a8655aebf1a196",
+          "verified": true
+        },
+        {
+          "path": "pred_A03599E2_to_C02943C3_B1.csv.gz",
+          "bytes": 161640,
+          "sha256": "e4277c6cbf46ace4a914bde26e4f39e78e11e76a4625292ac96ce1d4a3dbbcf3",
+          "verified": true
+        },
+        {
+          "path": "pred_A03599E2_to_C02943C3_B2.csv.gz",
+          "bytes": 162282,
+          "sha256": "cdc318acc23573341a59cdc807591ae95062371aadba61894f85cbb1fe7a6087",
+          "verified": true
+        },
+        {
+          "path": "pred_A03599E2_to_C02943C3_B3.csv.gz",
+          "bytes": 163193,
+          "sha256": "b286e2dc9d409d520ea4a9171d86463efb8878a25eb883eaa3aaf5c09a70d008",
+          "verified": true
+        },
+        {
+          "path": "pred_C02943C3_to_A03599E2_B0.csv.gz",
+          "bytes": 20048,
+          "sha256": "259eb8121502af8caeefe07c0fab6f1209bb84aa96bcc6d5d553691fcb754ac9",
+          "verified": true
+        },
+        {
+          "path": "pred_C02943C3_to_A03599E2_B1.csv.gz",
+          "bytes": 271836,
+          "sha256": "162500b63c61d42a19ca0eead0ccff34b9e9115bf2e22cc30bef314a831c9839",
+          "verified": true
+        },
+        {
+          "path": "pred_C02943C3_to_A03599E2_B2.csv.gz",
+          "bytes": 273073,
+          "sha256": "797ae0faafe436f263dff2b06858a15fdc0031067a10efbca865b4fc81640000",
+          "verified": true
+        },
+        {
+          "path": "pred_C02943C3_to_A03599E2_B3.csv.gz",
+          "bytes": 274459,
+          "sha256": "d11c585229194fbb8136e16d2f8703dc3ef98f084465b5aa133d4599701499be",
+          "verified": true
+        },
+        {
+          "path": "primary_contrasts.csv",
+          "bytes": 478,
+          "sha256": "033071a4a3fcc4d5cf6c0c404ac5163b31fcb020c86cc5b37a554cfd946e2132",
+          "verified": true
+        },
+        {
+          "path": "setup/A03599E2_masks.npz",
+          "bytes": 25166,
+          "sha256": "ee208a1ff99ccdb5667d20716143528f22ba6cb99b49cf727d27506f6823d35d",
+          "verified": true
+        },
+        {
+          "path": "setup/A03599E2_null_source_strata.csv",
+          "bytes": 24342,
+          "sha256": "7701f327caaad764f9282223d47ae134dfca14a1c7349df26394bb8d515436c7",
+          "verified": true
+        },
+        {
+          "path": "setup/C02943C3_masks.npz",
+          "bytes": 10743,
+          "sha256": "88b230452688ec246661c21a734be733129d95f404ec2bcfad6a70bcb8622915",
+          "verified": true
+        },
+        {
+          "path": "setup/C02943C3_null_source_strata.csv",
+          "bytes": 14911,
+          "sha256": "2b70a6356059dc2ecafab3c87bd336eed77435690468cb7f12767d63c78a52da",
+          "verified": true
+        },
+        {
+          "path": "setup/eligible_channels_source_only.json",
+          "bytes": 487,
+          "sha256": "a6a4b4814a7434cc9d2e8417fc2d862bbf4119bd790c4044016b8577e8c7257d",
+          "verified": true
+        },
+        {
+          "path": "setup/readout_support.csv",
+          "bytes": 560,
+          "sha256": "ef38eaabb8feaa35a163d50b88f8ddc8c2d67a5b53f80e8b79d15aa56fcdc117",
+          "verified": true
+        },
+        {
+          "path": "setup/receiver_support.csv",
+          "bytes": 4482,
+          "sha256": "e19c240ea130910c97c3b018df27709658e81328428a486cd14911721acb0139",
+          "verified": true
+        },
+        {
+          "path": "setup/resolved_protocol.json",
+          "bytes": 6328,
+          "sha256": "602531911e12588ddbd831f54faf0c8999e31d915be0622fb84475d23f8d20dc",
+          "verified": true
+        },
+        {
+          "path": "setup/setup_audit.json",
+          "bytes": 14388,
+          "sha256": "80aa2fbb45cebb573655fea9ff08a3d3fe6bd71734826250bab144391870b7cd",
+          "verified": true
+        },
+        {
+          "path": "setup/source_support.csv",
+          "bytes": 305,
+          "sha256": "2710ec7ee7710ea6391c16bab210e27b54af6bb50375b56881d8f47cb71649b8",
+          "verified": true
+        }
+      ],
+      "feature_file_sha256": "0f4015cce1ba5e56e010a4a5ed7806a1c57de99d96b299dd17de6905f692ad78",
+      "outcome_file_columns_read": [
+        "cell_key",
+        "block_id"
+      ],
+      "source_pool_counts": {
+        "density": 39079,
+        "source": 164,
+        "pooled": 174,
+        "multi": 10
+      },
+      "no_endogenous_rna_loaded": true
+    },
+    "geometry": {
+      "prepared_cells_sha256": "e52e405e192dfd17fb45c8ab9bc37419958275c6507046d9f0ae1b35ab7a4b5c",
+      "receiver_index_sha256": "fe76686f103955e006f235e2ad1c43f3e51374ff2e587c5500e36471daca4c44",
+      "receiver_xy_sha256": "8ac2de63ce10d5e12c1cc1fe03f18b4ddcc29458a230aab98c97abd4b1a85d57",
+      "coordinate_columns_read": [
+        "cell_key",
+        "x_um",
+        "y_um",
+        "geometry_component",
+        "spatial_block"
+      ],
+      "receiver_count": 3638,
+      "evaluation_blocks": 35,
+      "coordinate_unit": "micrometre",
+      "prepared_block_vs_evaluation_block": "Prepared coordinate components retained; evaluation block IDs are unchanged pilot IDs with their own grid convention."
+    },
+    "permutation_shape": [
+      99,
+      3638,
+      8
+    ]
+  },
+  "A03599E2": {
+    "receivers": 6898,
+    "blocks": 66,
+    "positive_counts": [
+      29,
+      53,
+      89,
+      255
+    ],
+    "feature_columns": [
+      "pooled_annulus::20_50um",
+      "pooled_annulus::50_100um",
+      "density::50um",
+      "density::100um",
+      "source::clu::near",
+      "source::clu::far",
+      "source::fasn::near",
+      "source::fasn::far",
+      "source::stk39::near",
+      "source::stk39::far",
+      "source::oligo2::near",
+      "source::oligo2::far"
+    ],
+    "input_provenance": {
+      "prior_result_dir": "historical_project/results/spatial_pilot",
+      "prior_manifest_sha256": "3c2695fbeee7c26a7afecb25b4d4e34f20935f1a80c26ae92480326e4228b630",
+      "prior_protocol_sha256": "32cb01fa84ae510a1935f5380c83e0e7283b7d66579b99944e59575c755f6e41",
+      "verified_files": [
+        {
+          "path": "A03599E2_features_B3.csv.gz",
+          "bytes": 397374,
+          "sha256": "f0e00c2137a1098b8ee498f2b9be424b2592cf952943fea5968a1366861f5135",
+          "verified": true
+        },
+        {
+          "path": "A03599E2_receiver_outcomes.csv.gz",
+          "bytes": 23696,
+          "sha256": "2e45ea54faaa73c606dea9fe78e180ae532d9225cfe11a663e6c3f42e616d6e3",
+          "verified": true
+        },
+        {
+          "path": "C02943C3_features_B3.csv.gz",
+          "bytes": 252414,
+          "sha256": "0f4015cce1ba5e56e010a4a5ed7806a1c57de99d96b299dd17de6905f692ad78",
+          "verified": true
+        },
+        {
+          "path": "C02943C3_receiver_outcomes.csv.gz",
+          "bytes": 38174,
+          "sha256": "b545fd748f18535ec31a4846d1abf114a550dbaa5c36629d98f1859722b3b64f",
+          "verified": true
+        },
+        {
+          "path": "before_first_fit.json",
+          "bytes": 9502,
+          "sha256": "9df3cd47a50c5374f1451c5d08a9e1277f4856e4f636e5173583c66a25ebac1d",
+          "verified": true
+        },
+        {
+          "path": "decision.json",
+          "bytes": 1898,
+          "sha256": "3f24e0267f8b9b579eb7fbc637fe781324f395295fe62fcd7cdef2f0d1834e9b",
+          "verified": true
+        },
+        {
+          "path": "null_fit_audits.json",
+          "bytes": 714613,
+          "sha256": "96e22ca5a7b047ef5e48ec170dfb09e1360c5e3734b067896c6914e7b13600f0",
+          "verified": true
+        },
+        {
+          "path": "null_metrics.csv",
+          "bytes": 163673,
+          "sha256": "3a1837d0f51fc65908ee0e8c087e622cff03e895899ce2f830f61d803aef6d83",
+          "verified": true
+        },
+        {
+          "path": "null_primary.csv",
+          "bytes": 15690,
+          "sha256": "91b389ae34b11519844b5d24c19584b3239a0b02aa8d873212cbf3400860a42d",
+          "verified": true
+        },
+        {
+          "path": "null_shuffle_audit.csv",
+          "bytes": 22628,
+          "sha256": "5e0d352e727980b0cf2629382a6fea2d307c882f2673814b8c28920de49fb1a5",
+          "verified": true
+        },
+        {
+          "path": "observed_block_metrics.csv",
+          "bytes": 197016,
+          "sha256": "1aa230eb0af5497be43cb1f93d2bf0ad3ab3f863c0e2e0692096786c86552b93",
+          "verified": true
+        },
+        {
+          "path": "observed_feature_diagnostics.csv",
+          "bytes": 14470,
+          "sha256": "2e241c9b6c0fd76830a4a232a3fcf25db545f4ac6c56cc0f88d01a65c7aba0cb",
+          "verified": true
+        },
+        {
+          "path": "observed_fit_audits.json",
+          "bytes": 25751,
+          "sha256": "24740da13da7e7e3e2908c2cc91aa8a3c213ae2e0c16de653f14d93562236df4",
+          "verified": true
+        },
+        {
+          "path": "observed_metrics.csv",
+          "bytes": 6436,
+          "sha256": "c6123304c92694bb09f464ea2966f0494c19a72754f964b4fe8c61d5d12a4f17",
+          "verified": true
+        },
+        {
+          "path": "observed_target_scaling.csv",
+          "bytes": 2189,
+          "sha256": "5a83ccbd26140efd35edc6a10ba997e25846ca1b5c91aed56bfd348e1907eb69",
+          "verified": true
+        },
+        {
+          "path": "pred_A03599E2_to_C02943C3_B0.csv.gz",
+          "bytes": 30795,
+          "sha256": "aded9a449bb34dc254f14985798825615eb3a5fb69d362b7c5a8655aebf1a196",
+          "verified": true
+        },
+        {
+          "path": "pred_A03599E2_to_C02943C3_B1.csv.gz",
+          "bytes": 161640,
+          "sha256": "e4277c6cbf46ace4a914bde26e4f39e78e11e76a4625292ac96ce1d4a3dbbcf3",
+          "verified": true
+        },
+        {
+          "path": "pred_A03599E2_to_C02943C3_B2.csv.gz",
+          "bytes": 162282,
+          "sha256": "cdc318acc23573341a59cdc807591ae95062371aadba61894f85cbb1fe7a6087",
+          "verified": true
+        },
+        {
+          "path": "pred_A03599E2_to_C02943C3_B3.csv.gz",
+          "bytes": 163193,
+          "sha256": "b286e2dc9d409d520ea4a9171d86463efb8878a25eb883eaa3aaf5c09a70d008",
+          "verified": true
+        },
+        {
+          "path": "pred_C02943C3_to_A03599E2_B0.csv.gz",
+          "bytes": 20048,
+          "sha256": "259eb8121502af8caeefe07c0fab6f1209bb84aa96bcc6d5d553691fcb754ac9",
+          "verified": true
+        },
+        {
+          "path": "pred_C02943C3_to_A03599E2_B1.csv.gz",
+          "bytes": 271836,
+          "sha256": "162500b63c61d42a19ca0eead0ccff34b9e9115bf2e22cc30bef314a831c9839",
+          "verified": true
+        },
+        {
+          "path": "pred_C02943C3_to_A03599E2_B2.csv.gz",
+          "bytes": 273073,
+          "sha256": "797ae0faafe436f263dff2b06858a15fdc0031067a10efbca865b4fc81640000",
+          "verified": true
+        },
+        {
+          "path": "pred_C02943C3_to_A03599E2_B3.csv.gz",
+          "bytes": 274459,
+          "sha256": "d11c585229194fbb8136e16d2f8703dc3ef98f084465b5aa133d4599701499be",
+          "verified": true
+        },
+        {
+          "path": "primary_contrasts.csv",
+          "bytes": 478,
+          "sha256": "033071a4a3fcc4d5cf6c0c404ac5163b31fcb020c86cc5b37a554cfd946e2132",
+          "verified": true
+        },
+        {
+          "path": "setup/A03599E2_masks.npz",
+          "bytes": 25166,
+          "sha256": "ee208a1ff99ccdb5667d20716143528f22ba6cb99b49cf727d27506f6823d35d",
+          "verified": true
+        },
+        {
+          "path": "setup/A03599E2_null_source_strata.csv",
+          "bytes": 24342,
+          "sha256": "7701f327caaad764f9282223d47ae134dfca14a1c7349df26394bb8d515436c7",
+          "verified": true
+        },
+        {
+          "path": "setup/C02943C3_masks.npz",
+          "bytes": 10743,
+          "sha256": "88b230452688ec246661c21a734be733129d95f404ec2bcfad6a70bcb8622915",
+          "verified": true
+        },
+        {
+          "path": "setup/C02943C3_null_source_strata.csv",
+          "bytes": 14911,
+          "sha256": "2b70a6356059dc2ecafab3c87bd336eed77435690468cb7f12767d63c78a52da",
+          "verified": true
+        },
+        {
+          "path": "setup/eligible_channels_source_only.json",
+          "bytes": 487,
+          "sha256": "a6a4b4814a7434cc9d2e8417fc2d862bbf4119bd790c4044016b8577e8c7257d",
+          "verified": true
+        },
+        {
+          "path": "setup/readout_support.csv",
+          "bytes": 560,
+          "sha256": "ef38eaabb8feaa35a163d50b88f8ddc8c2d67a5b53f80e8b79d15aa56fcdc117",
+          "verified": true
+        },
+        {
+          "path": "setup/receiver_support.csv",
+          "bytes": 4482,
+          "sha256": "e19c240ea130910c97c3b018df27709658e81328428a486cd14911721acb0139",
+          "verified": true
+        },
+        {
+          "path": "setup/resolved_protocol.json",
+          "bytes": 6328,
+          "sha256": "602531911e12588ddbd831f54faf0c8999e31d915be0622fb84475d23f8d20dc",
+          "verified": true
+        },
+        {
+          "path": "setup/setup_audit.json",
+          "bytes": 14388,
+          "sha256": "80aa2fbb45cebb573655fea9ff08a3d3fe6bd71734826250bab144391870b7cd",
+          "verified": true
+        },
+        {
+          "path": "setup/source_support.csv",
+          "bytes": 305,
+          "sha256": "2710ec7ee7710ea6391c16bab210e27b54af6bb50375b56881d8f47cb71649b8",
+          "verified": true
+        }
+      ],
+      "feature_file_sha256": "f0e00c2137a1098b8ee498f2b9be424b2592cf952943fea5968a1366861f5135",
+      "outcome_file_columns_read": [
+        "cell_key",
+        "block_id"
+      ],
+      "source_pool_counts": {
+        "density": 60133,
+        "source": 297,
+        "pooled": 318,
+        "multi": 21
+      },
+      "no_endogenous_rna_loaded": true
+    },
+    "geometry": {
+      "prepared_cells_sha256": "f2ad4939b69206cff5d1195511e6115a43f58f623320ada3de2ade96b048c5ee",
+      "receiver_index_sha256": "67c1a45adb1a81814c4fe83e53601ce26a6241b176059316ac517318f307154c",
+      "receiver_xy_sha256": "357b75d0e37f1b08644a2a4a7998a3fe13eec41b11c25e7a4360e727a6638c7d",
+      "coordinate_columns_read": [
+        "cell_key",
+        "x_um",
+        "y_um",
+        "geometry_component",
+        "spatial_block"
+      ],
+      "receiver_count": 6898,
+      "evaluation_blocks": 66,
+      "coordinate_unit": "micrometre",
+      "prepared_block_vs_evaluation_block": "Prepared coordinate components retained; evaluation block IDs are unchanged pilot IDs with their own grid convention."
+    },
+    "permutation_shape": [
+      99,
+      6898,
+      8
+    ]
+  }
+}

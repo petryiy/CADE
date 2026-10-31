@@ -1,0 +1,56 @@
+[
+  {
+    "chip": "C02943C3",
+    "receivers": 3638,
+    "blocks": 35,
+    "sources": 164,
+    "movable_source_labels": 144,
+    "readouts": [
+      "Arhgap12",
+      "Ssrp1",
+      "Gad1",
+      "Map2k6"
+    ],
+    "prior_readout_code_hits": {
+      "Arhgap12": [],
+      "Ssrp1": [],
+      "Gad1": [],
+      "Map2k6": []
+    },
+    "input_hashes": {
+      "rna_counts.npz": "fc5f32c6e736f019662b779886aa1b50acf1308a220cb3fce800315be30765c8",
+      "cells.csv": "e52e405e192dfd17fb45c8ab9bc37419958275c6507046d9f0ae1b35ab7a4b5c",
+      "rna_features.csv": "d2d46a8500c72e30f568c98b472cca4b78833cc5d45ba99e741d65ddbc872746"
+    },
+    "output_sha256": "676887d641c290142fa95baa17a518aed540260f386e3754ce695ef26e2966ab",
+    "prepared_at_utc": "2026-10-30T04:06:48.702923+00:00",
+    "source_reconstruction_matches_frozen_counts": true
+  },
+  {
+    "chip": "A03599E2",
+    "receivers": 6898,
+    "blocks": 66,
+    "sources": 297,
+    "movable_source_labels": 263,
+    "readouts": [
+      "Arhgap12",
+      "Ssrp1",
+      "Gad1",
+      "Map2k6"
+    ],
+    "prior_readout_code_hits": {
+      "Arhgap12": [],
+      "Ssrp1": [],
+      "Gad1": [],
+      "Map2k6": []
+    },
+    "input_hashes": {
+      "rna_counts.npz": "f68838575128193a4c24b31697db39a50f321212302e259940e36e7d2849d8ec",
+      "cells.csv": "f2ad4939b69206cff5d1195511e6115a43f58f623320ada3de2ade96b048c5ee",
+      "rna_features.csv": "f7ccc5a5e0e17e0fb00fc500d1e45171637b334411f7c1fc78ee17bc6a77d96d"
+    },
+    "output_sha256": "fc29552a7de37cf10b4ee5d691a1bb27e53151cebdda747f619950bb79cd4480",
+    "prepared_at_utc": "2026-10-30T04:06:49.693891+00:00",
+    "source_reconstruction_matches_frozen_counts": true
+  }
+]

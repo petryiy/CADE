@@ -1,0 +1,7 @@
+{
+  "time_utc": "2026-10-30T04:06:03.512514+00:00",
+  "reason": "The historical resolved protocol specifies minimum component size1000, not200. Use exact saved source_mask and verify reconstructed old source counts. This corrects the descriptive preflight value before any new outcome access.",
+  "original_protocol_sha256": "f86713e79d38e95e0feb43052b704f350557fc4df90ba10ce621a62fb359bc73",
+  "new_component_rule": 1000,
+  "outcomes_accessed": false
+}

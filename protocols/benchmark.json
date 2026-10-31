@@ -1,0 +1,36 @@
+{
+  "seed": "calibrated-score-confirm-20261029-C2",
+  "layouts": [
+    "original",
+    "relocated"
+  ],
+  "p_grid": [
+    0.03,
+    0.2
+  ],
+  "q_grid": [
+    -2.0,
+    0.0,
+    0.75,
+    2.0
+  ],
+  "m_grid": [
+    0.0,
+    1.0
+  ],
+  "stress_mechanisms": [
+    "poisson_ordinary",
+    "poisson_thinning",
+    "occurrence_only",
+    "capture_depends_exposure",
+    "capture_depends_intensity",
+    "chip_background_shift",
+    "signed_sparse",
+    "mixed_sources",
+    "opposing_branches",
+    "block_correlated",
+    "nonlinear_saturation"
+  ],
+  "replicates": 12,
+  "aggregation": "Average both cross-chip directions within each draw; fixed condition weights. Aggregate all shared-layout conditions within replicate first, then MCSE across12 replicate seeds. No cell/block treated as independent animal."
+}
